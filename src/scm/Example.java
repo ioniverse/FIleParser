@@ -28,7 +28,7 @@ public class Example {
 	{
 		
 		
-		File file= new File("./src/monfichier.txt");
+		File file= new File(args[1]);
 		
 
 		entree= new FileParser();
