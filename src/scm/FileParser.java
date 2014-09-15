@@ -23,7 +23,11 @@ public class FileParser {
 			br= new BufferedReader(isr);
 			
 			while ((line=br.readLine())!=null)
-				handler.defaultLine(line);
+				{
+					handler.defaultLine(line);
+					if(line.charAt(0)=='#')
+					handler.commentLine(line);
+				}
 			br.close();
 		} 
 		catch (FileNotFoundException e) {
