@@ -13,7 +13,7 @@ public class Example {
 	{
 		
 		
-		File file= new File(args[1]);
+		File file= new File(args[0]);
 		
 
 		entree= new FileParser();
